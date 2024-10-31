@@ -17,7 +17,7 @@ Make sure you have the following installed:
 git clone https://github.com/leedalmogbel/whois-lookup.git
 
 # Change the directory to the frontend
-cd frontend
+cd whois-lookup/frontend
 
 # Install the dependencies
 npm install
@@ -26,13 +26,13 @@ npm install
 cd ..
 
 # Change the directory to the backend
-cd backend
+cd whois-lookup/backend 
 
 # Install the dependencies
 npm install
 
 # Copy or Rename the .env.copy to .env
-cpy .env.copy .env
+cp .env.copy .env
 ```
 
 ## Up and Running
