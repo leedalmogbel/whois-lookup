@@ -10,6 +10,12 @@ Make sure you have the following installed:
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 - [Git](https://git-scm.com/)
 
+## Tech-Stacks
+
+- ReactJs
+- NodeJs
+- Tailwind
+
 ## Installation
 
 ```sh
