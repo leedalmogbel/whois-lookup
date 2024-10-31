@@ -53,3 +53,8 @@ cd backend
 npm run dev
 ```
 
+
+## Open a Browser and enter this local address
+```sh
+http://localhost:5000
+```
