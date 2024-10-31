@@ -14,6 +14,7 @@ Make sure you have the following installed:
 
 ```sh
 # Clone the repository
+https://github.com/leedalmogbel/whois-lookup.git
 
 # Change the directory to the frontend
 cd frontend
