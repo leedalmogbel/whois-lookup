@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
 import ResultTable from './components/ResultTable';
 
@@ -21,6 +21,8 @@ const App: React.FC = () => {
     const [data, setData] = useState<ResultData | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
+    const prevInfoType = useRef('');
+    
 
     const isValidDomain = (domain: string) => {
         const regex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)+[a-zA-Z]{2,}$/;
@@ -51,6 +53,14 @@ const App: React.FC = () => {
             setLoading(false);
         }
     };
+
+    useEffect(() => {
+        if (infoType !== prevInfoType.current) {
+            setData(null);
+            setError(null);
+        }
+        prevInfoType.current = infoType;
+    }, [infoType]);
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
